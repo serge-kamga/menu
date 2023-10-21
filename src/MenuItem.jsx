@@ -3,7 +3,7 @@ import React from "react";
 const MenuItem = ({ price, desc, img, category, title }) => {
   return (
     <article>
-      <img src={img} alt={desc} />
+      <img src={img} alt={desc} className="img" />
       <div className="item-info">
         <header>
           <h5>{title}</h5>

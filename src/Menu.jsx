@@ -5,8 +5,7 @@ export default function Menu({ items }) {
   return (
     <div className="section-center">
       {items.map((item) => {
-        const { id, title, price, img, desc } = item;
-        return <MenuItem key={id} {...item} />;
+        return <MenuItem key={item.id} {...item} />;
       })}
     </div>
   );
